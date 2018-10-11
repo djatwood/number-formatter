@@ -31,14 +31,14 @@ function format_string(value, format_string, placeholder = '_') {
 	return response
 }
 
-function update_input(e) {
+function format_input(e) {
 	const input = e.target
 	const format = input.placeholder
 	const placeholder = input.dataset.placeholder
 
 	// If placeholder character is a number remove the listener
 	if (format.match(/\d+/)) {
-		input.removeEventListener('input', update_input)
+		input.removeEventListener('input', format_input)
 		console.error('Cannot use number as placeholder character on ', input)
 		return
 	}
