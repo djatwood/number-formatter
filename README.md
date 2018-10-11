@@ -1,5 +1,4 @@
-#Number String Formatter
-========
+# Number String Formatter
 
 Number String Formatter is a built on a pure functions for formatting number strings to a specified format. Need your input field to use the US phone number format?
 ```html
@@ -13,17 +12,14 @@ import('./format_number.js')
 .catch(er => console.error(er))
 ```
 
-##Features
---------
+## Features
 - Functional
 - Works with any custom format
 - Fast! Each update take ~0.5ms to execute
 
-##Installation
-------------
+## Installation
 [Download here](https://gitlab.com/datwood/phone-number-formatting/raw/master/format_number.js)
 
-##License
--------
+## License
 
 The project is licensed under the GNU General Public License v3.0.
