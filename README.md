@@ -7,7 +7,7 @@ Number String Formatter is a built on a pure functions for formatting number str
 ```javascript
 import('./format_number.js')
 .then(module => {
-    document.getElementById('phone_input').addEventListener('input', module.update_input)
+    document.getElementById('phone_input').addEventListener('input', module.format_input)
 })
 .catch(er => console.error(er))
 ```
