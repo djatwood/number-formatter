@@ -14,15 +14,7 @@ import('./format_number.js')
 	})
 	.catch(er => console.error(er))
 ```
-
-## How it works
-`update_input` passes the input's placeholder and value to `f_string` then updates the field with the returned values
-```javascript
-f_string(string_to_be_formatted, format_string[, placholder_character]) {
-    // return [formatted_string, caret_position]
-}
-```
-#### The HTML
+### The HTML
 ```html
 <input type="tel" placeholder="(___) ___-____">
 ```
@@ -31,3 +23,11 @@ If you want a placeholder character other than `_`
 <input type="tel" placeholder="...-...-...." data-placeholder=".">
 ```
 The placeholder attribute holds the input mask
+
+## How it works
+`update_input` passes the input's placeholder and value to `f_string` then updates the field with the returned values
+```javascript
+f_string(string_to_be_formatted, format_string[, placholder_character]) {
+    // return [formatted_string, caret_position]
+}
+```
