@@ -19,8 +19,8 @@ The only restriction is that your format string cannot contain numbers. This is 
 ```html
 <input type="tel" placeholder="000-000-0000 data-placeholder="0">
 ```
-<iframe height='384' scrolling='no' title='US Number Formatter v2' src='//codepen.io/datwood/embed/NOpgNe/?height=384&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/datwood/pen/NOpgNe/'>US Number Formatter v2</a> by Daniel Atwood (<a href='https://codepen.io/datwood'>@datwood</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+<p data-height="384" data-theme-id="0" data-slug-hash="NOpgNe" data-default-tab="result" data-user="datwood" data-pen-title="US Number Formatter v2" class="codepen">See the Pen <a href="https://codepen.io/datwood/pen/NOpgNe/">Number Formatter</a> by Daniel Atwood (<a href="https://codepen.io/datwood">@datwood</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Features
 - Functional
