@@ -60,8 +60,6 @@ export function format_input(event, element = null) {
 	// If placeholder character is a number remove the listener
 	if (format.match(/\d+/)) return exit('Cannot use number as placeholder character')
 
-
-
 	const response = format_string(input.value, format, placeholder)
 	// Set input value to new formatted value
 	input.value = response.value
