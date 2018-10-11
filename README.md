@@ -1,6 +1,6 @@
 # Number String Formatter
 
-Number String Formatter is a built on a pure functions for formatting number strings to the format of the placeholder attribute. Need your input field to use the US phone number format?
+Number String Formatter is a built on a pure functions for formatting number strings to the format of the `placeholder` attribute. Need your input field to use the US phone number format?
 ```html
 <input id="phone_input" type="tel" placeholder="(___) ___-____">
 ```
@@ -11,7 +11,7 @@ import('./format_number.js')
 })
 .catch(er => console.error(er))
 ```
-By default `_` is the placeholder character but if you want to use a different character just supply the data-placeholder attribute.
+By default `_` is the placeholder character but if you want to use a different character just supply the `data-placeholder` attribute.
 ```html
 <input type="tel" placeholder="...-...-...." data-placeholder=".">
 ```
