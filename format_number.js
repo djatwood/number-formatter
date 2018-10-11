@@ -49,8 +49,3 @@ function update_input(e) {
 	// Set you cursor to the end of the inputted string
 	input.setSelectionRange(r.pos, r.pos)
 }
-
-// Listen to all type="tel" inputs
-document.querySelectorAll('input[type=tel][placeholder]').forEach(el => {
-	el.addEventListener('input', update_input)
-})
