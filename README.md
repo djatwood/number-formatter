@@ -22,3 +22,12 @@ f_string(string_to_be_formatted, format_string[, placholder_character]) {
     // return [formatted_string, caret_position]
 }
 ```
+
+```html
+<input type="tel" placeholder="(___) ___-____">
+```
+If you want a placeholder character other than `_`
+```html
+<input type="tel" placeholder="...-...-...." data-placeholder=".">
+```
+The placeholder attribute holds the input mask
