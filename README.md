@@ -14,3 +14,11 @@ import('./format_number.js')
 	})
 	.catch(er => console.error(er))
 ```
+
+## How it works
+`update_input` passes the input's placeholder and value to `f_string` then updates the field with the returned values
+```javascript
+f_string(string_to_be_formatted, format_string[, placholder_character]) {
+    // return [formatted_string, caret_position]
+}
+```
