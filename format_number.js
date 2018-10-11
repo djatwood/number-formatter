@@ -1,34 +1,34 @@
-function f_string(value, format_string, placeholder = '_') {
+function format_string(value, format_string, placeholder = '_') {
 	// Extract numbers 
-	const i = value.match(/\d/g)
+	const numbers = value.match(/\d/g)
 	// If no numbers return empty string and position 0 
-	if (i === null) return {
+	if (numbers === null) return {
 		value: '',
 		pos: 0
 	}
 
-	let r = {}
+	let response = {}
 	const format = Array.from(format_string)
-	const len = i.length
+	const num_len = numbers.length
 
 	// Get breakpoints in format 
-	const b = format
+	const breaks = format
 		.map((s, i) => s != placeholder ? i : null)
 		.filter(s => s != null)
 
 	// Replace placeholder with numbers 
-	const s = format.map(n => (i.length && n === placeholder ? i.shift() : n))
-	r.value = s.join('')
+	const formatted_string = format.map(n => (numbers.length && n === placeholder ? numbers.shift() : n))
+	response.value = formatted_string.join('')
 
 	// Find last number index from formatted string 
-	const p = format.length - s.indexOf(
-		s.reverse()
+	const last_number_index = format.length - formatted_string.indexOf(
+		formatted_string.reverse()
 		.find(s => s.match(/\d+/))
 	) - 1
 	// Get smallest position from offset map 
-	r.pos = Math.min(...b.map((n, i) => p < n ? len + i : len + b.length))
+	response.pos = Math.min(...breaks.map((n, i) => last_number_index < n ? num_len + i : num_len + breaks.length))
 
-	return r
+	return response
 }
 
 function update_input(e) {
@@ -43,7 +43,7 @@ function update_input(e) {
 		return
 	}
 
-	const r = f_string(input.value, format, placeholder)
+	const r = format_string(input.value, format, placeholder)
 	// Set input value to new formatted value
 	input.value = r.value
 	// Set you cursor to the end of the inputted string
