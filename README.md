@@ -22,7 +22,7 @@ f_string(string_to_be_formatted, format_string[, placholder_character]) {
     // return [formatted_string, caret_position]
 }
 ```
-
+#### The HTML
 ```html
 <input type="tel" placeholder="(___) ___-____">
 ```
