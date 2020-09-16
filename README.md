@@ -1,5 +1,7 @@
 # Number Formatter
 
+_**Todo:** I would like to make this even more generic so it formats any string._
+
 Number Formatter is a built on a pure functions for formatting number strings to the format of the `placeholder` attribute. Need your input field to use the US phone number format?
 ```html
 <script>
