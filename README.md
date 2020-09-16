@@ -20,7 +20,6 @@ The only restriction is that your format string cannot contain numbers. This is 
 <input type="tel" placeholder="000-000-0000" data-placeholder="0">
 ```
 <p data-height="384" data-theme-id="0" data-slug-hash="NOpgNe" data-default-tab="result" data-user="datwood" data-pen-title="US Number Formatter v2" class="codepen">See the Pen <a href="https://codepen.io/datwood/pen/NOpgNe/">Number Formatter</a> by Daniel Atwood (<a href="https://codepen.io/datwood">@datwood</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Features
 - Functional
